@@ -170,6 +170,8 @@ for(int i = index + 2; i < size1; ++i){
 iter[i] = ptr[i - 1];
 }
 ++size;
+
+delete [] ptr;
 ptr = iter;
 
 }
@@ -201,6 +203,7 @@ for(int i = size; i < n; ++i){
 size = n;
 }
 
+delete [] ptr;
 ptr = nvec;
 
 
